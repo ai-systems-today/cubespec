@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+pip install -e ".[plot,cli,calibration]"
+echo "cubespec installed for Binder."

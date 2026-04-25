@@ -1,0 +1,8 @@
+key,mean,sd,label,units,group
+P0_rho,2400,35,P0: ρ (density),kg/m³,Material
+P1_dx,149.9797,0.5209,P1: dx,mm,Geometry
+P2_dy,150.8522,0.8199,P2: dy,mm,Geometry
+P3_dz,150.0633,0.4826,P3: dz,mm,Geometry
+P4_Fx,1500000,40000,P4: Fx (load),N,Forces
+P5_Fy,45.6836,23.1312,P5: Fy,N,Forces
+P6_Fz,65.3273,30.0306,P6: Fz,N,Forces

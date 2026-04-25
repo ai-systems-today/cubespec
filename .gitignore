@@ -1,0 +1,29 @@
+# Build artefacts
+build/
+dist/
+*.egg-info/
+src/*.egg-info/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Stray files from bad pip invocations
+=*

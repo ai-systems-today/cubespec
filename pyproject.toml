@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cubespec"
+version = "0.1.0"
+description = "Monte Carlo, DOE, RSM and Sobol sensitivity for the 150 mm concrete cube compressive test (CubeSpec / Sensitive-Spark thesis dashboard)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Sensitive-Spark Thesis Project" },
+]
+keywords = [
+    "monte-carlo",
+    "design-of-experiments",
+    "sobol",
+    "sensitivity-analysis",
+    "concrete",
+    "compressive-strength",
+    "rsm",
+    "uncertainty-quantification",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "SALib>=1.4",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+cli = ["typer>=0.9"]
+calibration = ["scikit-learn>=1.3"]
+dev = [
+    "pytest>=7",
+    "pytest-cov>=4",
+    "build>=1.0",
+    "twine>=4.0",
+    "ruff>=0.5",
+    "mypy>=1.8",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "hypothesis>=6.100",
+    "mutmut>=2.4",
+    "bandit>=1.7",
+]
+
+[project.urls]
+Homepage = "https://sensitive-spark.lovable.app"
+Repository = "https://github.com/ai-systems-today/cubespec"
+Documentation = "https://sensitive-spark.lovable.app"
+Issues = "https://github.com/ai-systems-today/cubespec/issues"
+
+[project.scripts]
+cubespec = "cubespec.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cubespec = ["py.typed", "models/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
