@@ -1,0 +1,39 @@
+{
+  "title": "cubespec — Monte Carlo, DOE, RSM and Sobol sensitivity for the 150 mm concrete cube compressive test",
+  "description": "Python companion to the Sensitive-Spark thesis dashboard. Bit-for-bit reproducible Monte Carlo sampling, full and fractional factorial DOE, response surface fitting, Sobol sensitivity, bootstrap CIs, reliability analysis, and constrained optimisation against a calibrated Poly2-ridge surrogate of the 150 mm concrete cube compressive test. 16 worked Jupyter notebooks cover every dashboard control end-to-end.",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Sensitive-Spark Thesis Project",
+      "affiliation": "AI Systems Today"
+    }
+  ],
+  "keywords": [
+    "monte-carlo",
+    "design-of-experiments",
+    "sobol",
+    "sensitivity-analysis",
+    "response-surface",
+    "reliability",
+    "concrete",
+    "compressive-strength",
+    "uncertainty-quantification",
+    "reproducible-research",
+    "python",
+    "jupyter"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://sensitive-spark.lovable.app",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/ai-systems-today/cubespec",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

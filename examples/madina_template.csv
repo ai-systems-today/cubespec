@@ -1,0 +1,30 @@
+# Madina-CSV measurement template for the cubespec DOE comparison
+#
+# How to use:
+#   1. Generate a DOE design (notebook 06 or 07, or the dashboard's DOE tab).
+#   2. Run each row in the lab. For each row record: P9 compressive strength
+#      in MPa (one column per replicate), optionally P8 strain and P7
+#      deformation in mm.
+#   3. Replace the empty cells below with your measurements. Add or remove
+#      rows so the run indices match your design.
+#   4. Save the file and run notebook 10 (it auto-detects the columns).
+#
+# Column legend (column names are case-insensitive; replicate suffixes _1, _2
+# are auto-averaged):
+#   run                REQUIRED — the design-point index from your DOE
+#   strength_mpa_1     P9 compressive strength, replicate 1 (MPa)
+#   strength_mpa_2     P9 compressive strength, replicate 2 (MPa)
+#   p8_strain          P8 strain (dimensionless)
+#   p7_def             P7 deformation (mm)
+#
+# You can omit any column except `run`. You can add `strength_mpa_3`,
+# `strength_mpa_4`, etc. — they will all be averaged.
+run,strength_mpa_1,strength_mpa_2,p8_strain,p7_def
+1,,,,
+2,,,,
+3,,,,
+4,,,,
+5,,,,
+6,,,,
+7,,,,
+8,,,,
