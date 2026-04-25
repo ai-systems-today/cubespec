@@ -7,9 +7,8 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-import numpy as np
 
-from .params import DEFAULT_CSP, load_csp_csv, PARAM_KEYS, OUTPUT_KEYS
+from .params import DEFAULT_CSP, load_csp_csv, OUTPUT_KEYS
 from .sampling import sample_independent
 from .model import compute_outputs_batch, set_mode
 from .doe import full_factorial, fractional_factorial, main_effects

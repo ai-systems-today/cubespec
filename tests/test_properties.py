@@ -24,7 +24,6 @@ Properties covered:
 from __future__ import annotations
 
 import numpy as np
-import pytest
 from hypothesis import given, settings, strategies as st, HealthCheck
 
 from cubespec import compute_outputs, compute_outputs_batch

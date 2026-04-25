@@ -92,8 +92,10 @@ def optimise(
     span = hi - lo
     for i, k in enumerate(PARAM_KEYS):
         h = max(1e-7, span[i] * 1e-5)
-        xp = x_star.copy(); xp[i] = min(hi[i], xp[i] + h)
-        xm = x_star.copy(); xm[i] = max(lo[i], xm[i] - h)
+        xp = x_star.copy()
+        xp[i] = min(hi[i], xp[i] + h)
+        xm = x_star.copy()
+        xm[i] = max(lo[i], xm[i] - h)
         yp = predict_calibrated(xp.reshape(1, -1))[0, output_idx]
         ym = predict_calibrated(xm.reshape(1, -1))[0, output_idx]
         dx = xp[i] - xm[i]

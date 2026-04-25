@@ -5,7 +5,7 @@ from typing import Optional
 import numpy as np
 from scipy.stats import norm, qmc
 
-from .params import CSP, PARAM_KEYS
+from .params import CSP
 from .correlation import cholesky
 
 

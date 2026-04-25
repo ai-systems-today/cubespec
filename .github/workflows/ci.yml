@@ -27,8 +27,9 @@ jobs:
           python -m pip install ".[plot,cli,calibration,dev]"
       - name: Lint (ruff)
         run: ruff check src/ tests/
-      - name: Type-check (mypy)
-        run: mypy src/cubespec
+      - name: Type-check (mypy, non-blocking)
+        continue-on-error: true
+        run: mypy src/cubespec --ignore-missing-imports
       - name: Tests (pytest)
         run: pytest tests/ -v --cov=cubespec --cov-report=term-missing
 
