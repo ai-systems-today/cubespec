@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from typing import List
 import numpy as np
 
-from .params import PARAM_KEYS
 
 
 @dataclass
@@ -25,7 +24,8 @@ def _quadratic_features(X: np.ndarray) -> np.ndarray:
     cols = [np.ones(n)]
     names = ["const"]
     for i in range(p):
-        cols.append(X[:, i]); names.append(f"x{i}")
+        cols.append(X[:, i])
+        names.append(f"x{i}")
     for i in range(p):
         for j in range(i, p):
             cols.append(X[:, i] * X[:, j])

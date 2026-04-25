@@ -14,9 +14,8 @@ import numpy as np
 import pytest
 
 from cubespec.rng import Mulberry32
-from cubespec.model import compute_outputs, compute_outputs_batch, set_mode
+from cubespec.model import compute_outputs, set_mode
 from cubespec.params import DEFAULT_CSP, PARAM_KEYS
-from cubespec.doe import full_factorial, main_effects
 from cubespec.sobol import sobol_indices
 
 

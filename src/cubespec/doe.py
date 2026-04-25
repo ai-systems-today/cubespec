@@ -5,7 +5,7 @@ for plain full factorials.
 """
 from __future__ import annotations
 
-from typing import Iterable, List, Tuple
+from typing import Iterable
 from itertools import combinations, product
 import numpy as np
 import pandas as pd
