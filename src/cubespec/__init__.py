@@ -40,6 +40,13 @@ from .correlation import (
 )
 from .uncertainty import decompose_variance, reliability_index, VarianceSplit, ReliabilityResult
 from .optimise import optimise, default_bounds, OptResult
+from . import measurements
+from .measurements import (
+    MeasurementRecord,
+    MeasurementSet,
+    parse_measurements,
+    write_template,
+)
 
 __version__ = "0.1.0"
 
@@ -89,4 +96,9 @@ __all__ = [
     "optimise",
     "default_bounds",
     "OptResult",
+    "measurements",
+    "MeasurementRecord",
+    "MeasurementSet",
+    "parse_measurements",
+    "write_template",
 ]

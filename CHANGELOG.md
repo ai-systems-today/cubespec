@@ -8,10 +8,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- 16-notebook curriculum under `notebooks/` mirroring every dashboard
+  control 1:1 (Live MC, Sampling, Correlation, DOE full / fractional /
+  multi-level / interactions / measurements, Sobol, RSM, Optimise,
+  Uncertainty & Reliability, Calibrated vs Analytic, Full Report Parity).
+- All 16 notebooks executed end-to-end via `nbmake` in CI
+  (`.github/workflows/notebooks.yml`) — 17/17 passing locally.
+- Colab + Binder + nbviewer + dashboard badges and `pip install`
+  bootstrap cell auto-injected on every notebook by
+  `scripts/normalise_notebooks.py` (idempotent).
+- `cubespec.measurements` module: Madina-CSV ingestion with replicate
+  averaging, schema auto-detection and `MeasurementSet.align()` for
+  parity scatter / residual diagnostics. Re-exported from top-level
+  `cubespec` package.
+- `examples/madina_template.csv` blank template for lab measurements.
+- `CITATION.cff` and `.zenodo.json` for thesis-grade citation.
+- PyPI Trusted Publishing workflow (`.github/workflows/publish.yml`).
 - Cross-language parity tests (`tests/test_parity.py`) locking the
   Python output to the TypeScript dashboard for `seed=1337`.
 - Pre-rendered example plots under `examples/plots/output/`.
 - `PUBLISHING.md` operator runbook for PyPI releases.
+
+### Removed
+- 4 superseded stub notebooks (`02_doe_full_vs_fractional`,
+  `03_rsm_contour`, `04_sobol_sensitivity`, `05_bootstrap_ci`) replaced
+  by the 16-notebook curriculum.
+
 
 ## [0.1.0] — 2026-04-22
 
