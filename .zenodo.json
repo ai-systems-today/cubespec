@@ -1,38 +1,50 @@
 {
-  "title": "cubespec — Monte Carlo, DOE, RSM and Sobol sensitivity for the 150 mm concrete cube compressive test",
-  "description": "Python companion to the Sensitive-Spark thesis dashboard. Bit-for-bit reproducible Monte Carlo sampling, full and fractional factorial DOE, response surface fitting, Sobol sensitivity, bootstrap CIs, reliability analysis, and constrained optimisation against a calibrated Poly2-ridge surrogate of the 150 mm concrete cube compressive test. 16 worked Jupyter notebooks cover every dashboard control end-to-end.",
-  "license": "MIT",
+  "title": "Sensitive-Spark / CubeSpec — Monte-Carlo, DOE and Sobol sensitivity for the 150 mm concrete cube test",
+  "description": "An interactive web dashboard (TypeScript + React) and a Python package (cubespec) implementing Monte-Carlo simulation, full and fractional factorial Design of Experiments, Response-Surface Methodology, Sobol sensitivity indices, and FORM reliability analysis for the 150x150x150 mm concrete cube compressive-strength test. Developed as an undergraduate engineering thesis with bilingual (EN/GR) documentation, calibrated Poly2-ridge surrogate (R^2 ~ 0.97), and full reproducibility (Docker, Binder, hypothesis property tests, mutation-testing CI).",
   "upload_type": "software",
+  "license": "MIT",
   "access_right": "open",
-  "creators": [
-    {
-      "name": "Sensitive-Spark Thesis Project",
-      "affiliation": "AI Systems Today"
-    }
-  ],
   "keywords": [
     "monte-carlo",
     "design-of-experiments",
-    "sobol",
+    "sobol-indices",
     "sensitivity-analysis",
-    "response-surface",
-    "reliability",
+    "response-surface-methodology",
+    "uncertainty-quantification",
+    "reliability-analysis",
     "concrete",
     "compressive-strength",
-    "uncertainty-quantification",
-    "reproducible-research",
-    "python",
-    "jupyter"
+    "civil-engineering",
+    "surrogate-modelling",
+    "reproducible-research"
+  ],
+  "creators": [
+    {
+      "name": "Sensitive-Spark Thesis Project",
+      "affiliation": "Undergraduate Engineering Thesis"
+    }
+  ],
+  "communities": [
+    { "identifier": "civil-engineering" },
+    { "identifier": "open-science" }
   ],
   "related_identifiers": [
     {
-      "identifier": "https://sensitive-spark.lovable.app",
-      "relation": "isDocumentedBy",
+      "identifier": "https://github.com/ai-systems-today/cubespec",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
       "scheme": "url"
     },
     {
-      "identifier": "https://github.com/ai-systems-today/cubespec",
-      "relation": "isSupplementTo",
+      "identifier": "https://sensitive-spark.lovable.app",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://pypi.org/project/cubespec/",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
       "scheme": "url"
     }
   ]

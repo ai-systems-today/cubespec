@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [0.1.0] — 2026-04-26
+
 ### Added
+- First public release.
 - 16-notebook curriculum under `notebooks/` mirroring every dashboard
   control 1:1 (Live MC, Sampling, Correlation, DOE full / fractional /
   multi-level / interactions / measurements, Sobol, RSM, Optimise,
@@ -28,17 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Python output to the TypeScript dashboard for `seed=1337`.
 - Pre-rendered example plots under `examples/plots/output/`.
 - `PUBLISHING.md` operator runbook for PyPI releases.
-
-### Removed
-- 4 superseded stub notebooks (`02_doe_full_vs_fractional`,
-  `03_rsm_contour`, `04_sobol_sensitivity`, `05_bootstrap_ci`) replaced
-  by the 16-notebook curriculum.
-
-
-## [0.1.0] — 2026-04-22
-
-### Added
-- First public release.
 - Surrogate model `compute_outputs` / `compute_outputs_batch` mirroring
   the dashboard's `model.ts`.
 - Independent, Latin Hypercube, and correlated multivariate-normal
@@ -54,10 +47,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   reproducibility with the React dashboard.
 - `cubespec` command-line interface with `run`, `doe`, and `sobol`
   subcommands.
-- 5 Jupyter notebooks under `notebooks/` covering quickstart,
-  full-vs-fractional DOE, RSM contours, Sobol sensitivity, and
-  bootstrap confidence intervals.
 - `pyproject.toml` PEP 621 metadata for PyPI.
+
+### Removed
+- 4 superseded stub notebooks (`02_doe_full_vs_fractional`,
+  `03_rsm_contour`, `04_sobol_sensitivity`, `05_bootstrap_ci`) replaced
+  by the 16-notebook curriculum.
 
 [Unreleased]: https://github.com/ai-systems-today/cubespec/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/ai-systems-today/cubespec/releases/tag/v0.1.0

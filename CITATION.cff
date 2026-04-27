@@ -1,38 +1,44 @@
 cff-version: 1.2.0
-message: "If you use cubespec in academic work, please cite it as below."
-title: "cubespec — Monte Carlo, DOE, RSM and Sobol sensitivity for the 150 mm concrete cube compressive test"
+message: "If you use this software or the accompanying thesis, please cite it as below."
+title: "Sensitive-Spark / CubeSpec — Monte-Carlo, DOE and Sobol sensitivity for the 150 mm concrete cube test"
 abstract: >-
-  Python companion library to the Sensitive-Spark thesis dashboard. Provides
-  bit-for-bit reproducible Monte Carlo sampling, full and fractional factorial
-  Designs of Experiments, response-surface fitting, Sobol sensitivity indices,
-  bootstrap confidence intervals, reliability analysis and constrained
-  optimisation against a calibrated Poly2-ridge surrogate of the 150 mm
-  concrete cube compressive test.
+  An interactive web dashboard (TypeScript / React) and Python package
+  (cubespec) implementing Monte-Carlo simulation, full and fractional
+  factorial Design of Experiments, Response-Surface Methodology, Sobol
+  sensitivity indices and FORM reliability analysis for the 150x150x150
+  mm concrete cube compressive-strength test, developed as an
+  undergraduate thesis. Ships with a calibrated Poly2-ridge surrogate
+  (R² ≈ 0.97), bilingual (EN/GR) UI and documentation, Binder/Docker
+  reproducibility, and Hypothesis property-based tests.
 type: software
 authors:
   - name: "Sensitive-Spark Thesis Project"
-    affiliation: "AI Systems Today"
 license: MIT
-repository-code: "https://github.com/ai-systems-today/cubespec"
-url: "https://sensitive-spark.lovable.app"
 version: "0.1.0"
-date-released: "2026-04-22"
+date-released: "2026-04-26"
+url: "https://sensitive-spark.lovable.app"
+repository-code: "https://github.com/ai-systems-today/cubespec"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PLACEHOLDER"
+    description: "Zenodo concept DOI (minted on first GitHub release)."
 keywords:
   - monte-carlo
   - design-of-experiments
   - sobol
   - sensitivity-analysis
-  - response-surface
-  - reliability
   - concrete
   - compressive-strength
+  - response-surface-methodology
   - uncertainty-quantification
+  - reliability-analysis
   - reproducible-research
 preferred-citation:
   type: software
-  title: "cubespec: reproducible Monte Carlo and sensitivity analysis for the 150 mm concrete cube compressive test"
+  title: "Sensitive-Spark / CubeSpec"
   authors:
     - name: "Sensitive-Spark Thesis Project"
   year: 2026
   version: "0.1.0"
   url: "https://github.com/ai-systems-today/cubespec"
+  doi: "10.5281/zenodo.PLACEHOLDER"
