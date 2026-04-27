@@ -27,7 +27,6 @@ jobs:
           pip install build twine
       - name: Build wheel + sdist
         run: |
-          cd python
           python -m build
           twine check dist/*
       - name: Publish to PyPI
