@@ -2,13 +2,13 @@
 
 > **Monte-Carlo, DOE, RSM and Sobol sensitivity for the 150 mm concrete
 > cube compressive test** — Python companion to the
-> [Sensitive-Spark dashboard](https://sensitive-spark.lovable.app), with
+> [Sensitive-Spark dashboard](https://app.ai-systems.today), with
 > a bit-for-bit parity contract against the TypeScript implementation.
 
 [![CI](https://github.com/ai-systems-today/cubespec/actions/workflows/ci.yml/badge.svg)](https://github.com/ai-systems-today/cubespec/actions/workflows/ci.yml)
 [![Notebooks](https://github.com/ai-systems-today/cubespec/actions/workflows/notebooks.yml/badge.svg)](https://github.com/ai-systems-today/cubespec/actions/workflows/notebooks.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Live demo](https://img.shields.io/badge/demo-sensitive--spark.lovable.app-blue)](https://sensitive-spark.lovable.app)
+[![Live demo](https://img.shields.io/badge/demo-sensitive--spark.lovable.app-blue)](https://app.ai-systems.today)
 <!-- Enable after first PyPI release: -->
 <!-- [![PyPI](https://img.shields.io/pypi/v/cubespec.svg)](https://pypi.org/project/cubespec/) -->
 <!-- [![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://pypi.org/project/cubespec/) -->
@@ -16,7 +16,7 @@
 
 Two front ends, one set of equations:
 
-- 🌐 **Web dashboard** — React + TypeScript, runs in the browser, no install: <https://sensitive-spark.lovable.app>
+- 🌐 **Web dashboard** — React + TypeScript, runs in the browser, no install: <https://app.ai-systems.today>
 - 🐍 **Python package** — `cubespec`, this repo. Notebook-, CLI- and library-friendly.
 
 Both implementations share the same surrogate model and PRNG
@@ -143,7 +143,7 @@ default span is ±3σ around each parameter mean.
 **Confidence.** Percentile bootstrap (B = 1000, seed 1337) on the P9 mean.
 
 Full theory and references in the bilingual thesis at
-<https://sensitive-spark.lovable.app/thesis>.
+<https://app.ai-systems.today/thesis>.
 
 ---
 
@@ -181,7 +181,7 @@ All seventeen execute end-to-end in CI on every push to `main`
 The thesis bundle is reproducible three ways:
 
 1. **In-app Reproduce button** — open the dashboard at
-   <https://sensitive-spark.lovable.app>, go to the Report tab, click
+   <https://app.ai-systems.today>, go to the Report tab, click
    **Reproduce thesis bundle**. Downloads a ZIP with every figure (PNG)
    and table (CSV) plus the commit SHA.
 2. **Python CLI** — `cubespec replay run.json` re-executes a saved

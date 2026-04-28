@@ -2,10 +2,10 @@
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ai-systems-today/cubespec/blob/main/notebooks/01_quickstart.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ai-systems-today/cubespec/main?urlpath=lab/tree/notebooks/)
-[![Dashboard](https://img.shields.io/badge/open-dashboard-2563eb)](https://sensitive-spark.lovable.app)
+[![Dashboard](https://img.shields.io/badge/open-dashboard-2563eb)](https://app.ai-systems.today)
 
 Sixteen worked notebooks that mirror **every control on every tab** of the
-[Sensitive-Spark dashboard](https://sensitive-spark.lovable.app), so you can
+[Sensitive-Spark dashboard](https://app.ai-systems.today), so you can
 read the thesis chapter, open the dashboard in one tab and a notebook in
 another, and watch the same numbers come out of both.
 

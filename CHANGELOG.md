@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.1.1] — 2026-04-28
+
+### Changed
+- Project URL switched from `sensitive-spark.lovable.app` to
+  `app.ai-systems.today` across `pyproject.toml` (Homepage,
+  Documentation), `README.md` badges and links, `CITATION.cff`,
+  `.zenodo.json`, notebook badges, and the user manual.
+- No code or API changes — surrogate output is bit-for-bit identical
+  to 0.1.0 (`tests/test_parity.py` unchanged).
+
+
 ## [0.1.0] — 2026-04-26
 
 ### Added
@@ -54,5 +65,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `03_rsm_contour`, `04_sobol_sensitivity`, `05_bootstrap_ci`) replaced
   by the 16-notebook curriculum.
 
-[Unreleased]: https://github.com/ai-systems-today/cubespec/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/ai-systems-today/cubespec/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/ai-systems-today/cubespec/releases/tag/v0.1.1
 [0.1.0]: https://github.com/ai-systems-today/cubespec/releases/tag/v0.1.0
